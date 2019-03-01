@@ -1,0 +1,35 @@
+<div class="container">
+  <h1>Events</h1>
+
+  <div class="container">
+    <h3>Click Listener</h3>
+    <button (click)="firstClick()">firstClick()</button>
+  </div>
+
+  <div class="container">
+    <h3>Attribute Binding</h3>
+    <label [class.grey]="greyEnabled">I am a label</label>
+  </div>
+
+  <div class="container">
+    <h3>NG Class</h3>
+    <label [ngClass]="{
+          'grey': greyEnabled,
+          'blue': !greyEnabled
+        }">I am a label</label>
+  </div>
+
+  <div class="container">
+    <h3>Style Binding</h3>
+    <label [style.color]="greyEnabled ? 'grey' : 'red'">I am a label</label>
+  </div>
+
+  <div class="container">
+    <h3>NG Style</h3>
+    <label [ngStyle]="{
+            'color': greyEnabled ? 'grey' : 'green',
+            'font-size' : greyEnabled ? '1em' : '2em'
+            }">I
+      am a label</label>
+  </div>
+</div>

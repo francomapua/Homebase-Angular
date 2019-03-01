@@ -7,10 +7,12 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { BasicsComponent } from './basics/basics.component';
 import { LoginComponent } from './login/login.component';
+import { EventsComponent } from './events/events.component';
+import { ServicesComponent } from './services/services.component';
 
 /*
   LEARN FROM HERE
-  https://www.youtube.com/watch?v=5wtnKulcquA
+  https://youtu.be/5wtnKulcquA?t=1920
 */
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LoginComponent } from './login/login.component';
     NavComponent,
     HomeComponent,
     BasicsComponent,
-    LoginComponent
+    LoginComponent,
+    EventsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
